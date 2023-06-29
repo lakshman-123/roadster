@@ -1,0 +1,4 @@
+com/roadster/config/Preferences.class
+com/roadster/controller/PreferencesController.class
+META-INF/spring-configuration-metadata.json
+com/roadster/RoadsterApplication.class
