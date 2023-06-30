@@ -10,8 +10,7 @@
     {
       "name": "preferences.age",
       "type": "java.lang.Integer",
-      "sourceType": "com.roadster.config.Preferences",
-      "defaultValue": 0
+      "sourceType": "com.roadster.config.Preferences"
     },
     {
       "name": "preferences.city",
@@ -26,8 +25,7 @@
     {
       "name": "preferences.international-places",
       "type": "java.lang.Boolean",
-      "sourceType": "com.roadster.config.Preferences",
-      "defaultValue": false
+      "sourceType": "com.roadster.config.Preferences"
     },
     {
       "name": "preferences.origin-country",

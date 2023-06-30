@@ -14,8 +14,11 @@ ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.ta
 RUN tar -xzvf apache-tomcat-9.0.76.tar.gz
 RUN rm apache-tomcat-9.0.76.tar.gz
 
-COPY ./target/roadster.war $TOMCAT_HOME/webapps
-COPY ./run.sh /tmp
-RUN chmod u+x /tmp/run.sh
+WORKDIR /tmp
+
+COPY target/roadster.war  $TOMCAT_HOME/webapps
+COPY run.sh  /tmp/
+RUN  chmod u+x /tmp/run.sh
+
 ENTRYPOINT [ "/tmp/run.sh" ]
-CMD [ "tail -f /dev/null" ]
+
